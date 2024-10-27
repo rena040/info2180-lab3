@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
         statusDisplay.classList.add('you-won'); // Add the 'you-won' class for styling
         hasGameBeenWon = true; // Set the hasGameBeenWon flag to true, indicating the game has ended
     }
+    const newGameButton = document.querySelector('.btn');
+    newGameButton.addEventListener('click', restartGame);
 });
 
 
