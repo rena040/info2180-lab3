@@ -27,5 +27,16 @@ document.addEventListener("DOMContentLoaded", function() {
        [0, 4, 8], // Diagonal from top-left to bottom-right
        [2, 4, 6]  // Diagonal from top-right to bottom-left
    ];
+    // Change style on mouseover
+    square.addEventListener('mouseover', function() {
+        square.classList.add('hover'); // Add the hover class
+    });
 
-})
+    // Change style back on mouseout
+    square.addEventListener('mouseout', function() {
+        square.classList.remove('hover'); // Remove the hover class
+    });
+});
+
+
+
